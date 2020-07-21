@@ -1,0 +1,93 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container">
+
+  <div class="row topContent">
+    <div class="col-sm-12 col-md-12 col-lg-2 "></div>
+    <video class=" col-sm-12 col-md-12 col-lg-8" controls>
+      <source src="{{liveVideoUrl}}" type="video/mp4">
+     Your browser does not support the video tag.
+    </video>
+    <div class="col-sm-12 col-md-12 col-lg-2 "></div>
+  </div>
+
+  <div class=" chantingBtnContainer">
+    <button class="chantingBtn" *ngIf="!chantingBtnIsDisabled"  (click)="chantingBtnPress()"> Start Chanting</button>
+    <div class="counter" *ngIf="chantingBtnIsDisabled">
+        <div class="percent">
+          <svg>
+            <circle cx="60" cy="60" r="60"></circle>
+            <circle [style.stroke-dashoffset] = "mantraChantedCircleCss" cx="60" cy="60" r="60"></circle>
+          </svg>
+          <div class="number">
+            <h2 >{{displayMantraChanted | number}}</h2>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="motiQuote">एक मंत्र का जाप करें और ऊपर दिए गए बटन पर क्लिक करें</div>
+
+  <div class="middleResult">
+    
+  
+      <div class="box">
+      <div class="percent">
+        <svg >
+          <circle cx="60" cy="60" r="60"></circle>
+          <circle [style.stroke-dashoffset] = "devoteeCircleCss" cx="60" cy="60" r="60"></circle>
+        </svg>
+        <div class="number">
+          <h2 >{{displayDevotee | number}}</h2>
+        </div>
+      </div>
+      <h4 class="text">Devotee Chanting</h4>
+    </div>
+   
+
+    
+      <div class="box">
+      <div class="percent">
+        <svg>
+          <circle cx="60" cy="60" r="60"></circle>
+          <circle [style.stroke-dashoffset] = "mantraChantedCircleCss" cx="60" cy="60" r="60"></circle>
+        </svg>
+        <div class="number">
+          <h2 >{{displayMantraChanted | number}}</h2>
+        </div>
+      </div>
+      <h4 class="text">Mantra Chanted</h4>
+    </div>
+ 
+
+    
+      <div class="box">
+      <div class="percent">
+        <svg>
+          <circle cx="60" cy="60" r="60"></circle>
+          <circle [style.stroke-dashoffset] = "roundsChantedCircleCss" cx="60" cy="60" r="60"></circle>
+        </svg>
+        <div class="number">
+          <h2 >{{displayRoundsChanted | number}}</h2>
+        </div>
+      </div>
+      <h4 class="text">Rounds Chanted</h4>
+    </div>
+  </div>
+  <div class="hariNaamDesc">
+    <h2>Hare Krishna Devotees !</h2>
+    <p>In the Brihanardiya Purana comes: Harenam Harenam Harenamayav Keval. Kalau Nastyaiv Nastyaiv Nastyaiv Gatiranyatha || In Kali Yuga only salvation can be done by haranam, haranam and haranam. There is no other way of salvation in Kali Yuga other than Harinam! Is not Is not! Kali Black Name Rupe Krishna Avatar | Naam haite sarva jagat nistar || - CC 91.16.22 The names Krishna and Krishna are integral: in Kali Yuga, Krishna himself incarnates as Hariनामāma. Only by haranam is the salvation of the whole world possible - The Padmapuran states: Name: Chintamani Krishnashitanya Ras Vigraha: | Complete Shuddo Nityamukto S Variatvam Naam Namino: || Harinam is like a Chintamani who can fulfill all desires. Hariनामāma is himself Rāsusaprā कृa and Krishna, and is an invocation of Chinmayattva (divinity). Harinam is complete, pure, eternal. There is no difference between Nami (Hari) and Harinam. Who is Krishna - He is Krishna. Which is Krishna name - that is Krishna. Shravan is better than any authentic source of Krishna's name, but according to the scriptures and Shri Chaitanya Mahaprabhu, Hare Krishna Mahamantra has been described in Kali Yuga. Just by keeping this mahamantra in Kali Yuga, beings can become entitled to liberation. In Kali Yuga, the simplest but most powerful means of attaining God is mentioned by his name-chanting. The statement of Srimad Bhagavat (12.3.51) - Although Kali Yuga is a repository of faults, yet it has a great virtue in it that by meditating (tapa) of God in Satyuga, by sacrificial rituals in Tretayuga, by worship and worship in Dwaparyuga. The fruit was received, in Kali Yuga, it is attained only by virtue of the name-sankirtana.
+      </p>
+  
+  </div>
+ 
+<router-outlet></router-outlet>

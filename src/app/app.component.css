@@ -1,0 +1,266 @@
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      
+      text-align: center;
+      color: #999;
+    
+  }
+
+  textarea{
+      width: 350px;
+      text-align: center;
+      border: none;
+      outline: none;
+      opacity: 0.7;
+  }
+
+  pre{
+    word-wrap: break-word;
+    text-align: center;
+    
+  }
+
+  
+
+.hariNaamDesc{
+    padding: 30px;
+    margin: auto;
+    color: #999;
+    font-size: 25px;
+    min-height: 500px;
+    
+}
+
+.container{
+    margin: auto !important;
+}
+
+  
+  .topContent{
+    background: linear-gradient(#1D1E22,#D4CE70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chantingResult{
+      display: flex;
+  }
+
+  .mantraDiv{
+    width: 300px;
+    height: 400px;
+    background-image: url('../assets/HareKrishna_MahaMantra_Hindi.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    
+    }
+
+    .chantingBtnContainer{
+       width: 100%;
+       display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px;
+    }
+    .chantingBtn{
+    padding: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 87px;
+    width: 101px;
+    height: 101px;
+    font-size: large;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    background-image: url(../assets/beads.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    }
+    .chantingBtn:hover:enabled{
+        transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    }
+
+    .chantingBtn:disabled{
+        
+        background-color: #E7E4AF;
+        color: #666666;;
+    }
+    
+    .motiQuote{
+        margin: 15px;
+        width: 100%;
+        font-weight: bold;
+        border-radius: 17px;
+        text-align: center;
+        border-color: black;
+        border-style: solid;
+        border-width: 3px;
+        padding: 11px;
+        font-size: smaller;
+        display: inline-block;
+    }
+
+
+
+  
+  .middleResult{
+     
+      text-align: center;
+  
+  }
+
+  .counter .percent{
+    position: relative;
+    width: 139px;
+    height: 131px;
+}
+
+.counter .percent svg{
+    position: relative;
+    width:139px;
+    height: 131px;
+
+}
+
+.counter .percent svg circle{
+    width:150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    stroke-linecap: round;
+}
+
+.counter .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke:#f3f3f3;
+   
+}
+.counter .percent svg circle:nth-child(2){
+    overflow: hidden;
+    stroke:#03a9f4;
+}
+
+  .box{
+    margin: 20px auto;
+    padding: auto;
+   position: relative;
+   max-width: 280px;
+   height: 280px;
+    display: inline-block;
+    border-radius:10px;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    transition:.5s ease;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.box:hover{
+    transform: translateY(5px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+
+
+.box .percent{
+    position: relative;
+    margin: 40px;
+    width: 67%;
+    height: 131px;
+
+}
+.box .percent svg{
+    position: relative;
+    width:70%;
+    height: 131px;
+
+}
+
+
+.box .percent svg circle{
+    width:150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    stroke-linecap: round;
+}
+
+
+
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke:#f3f3f3;
+   
+}
+
+
+.box .percent svg circle:nth-child(2){
+    overflow: hidden;
+    stroke:#03a9f4;
+}
+
+
+.box .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    overflow: hidden;
+}
+
+.counter .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    overflow: hidden;
+}
+
+.counter .percent .number span{
+    font-size: smaller;
+}
+
+.box .percent .number h2{
+    font-size: 48px;
+}
+
+.box .text {
+    margin-top: 30px;
+    padding: 5px 0 0;
+    color:#999;
+    font-weight: 500;
+    
+}
